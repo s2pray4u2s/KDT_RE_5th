@@ -7,6 +7,11 @@
 
 _(출처: U.S. Department of Energy, “Hydrogen Fuel Basics”, 2024)_
 
+![수소에너지](https://newsroom.posco.com/kr/wp-content/uploads/2022/06/posco_%EC%9E%A5%ED%91%9C03.jpg)
+
+
+
+
 
 > ***수소에너지의 원리***
 
@@ -29,6 +34,8 @@ _(출처: National Renewable Energy Laboratory, “Hydrogen Basics”, 2023)_
 이때 부산물은 물뿐이므로 환경부담이 거의 없다.
 
 _(출처: U.S. DOE “Fuel Cell Basics”, 2024)_
+
+![수소에너지](https://newsroom.posco.com/kr/wp-content/uploads/2022/06/posco_%EC%9E%A5%ED%91%9C04_%EC%B5%9C%EC%B5%9C%EC%A2%85.png)
 
 > ***수소에너지의 특징***
 
@@ -96,3 +103,5 @@ _(출처: Frontiers in Energy Research, 2024)_
 이때 VPP 플랫폼은 태양광·ESS ·연료전지 등을 실시간으로 제어하여 수요와 공급을 균형 맞춘다.
 
 _(출처: Luo et al., Optimal Scheduling of Electricity-Hydrogen Coupling Virtual Power Plant, Frontiers in Energy Research, 2024)_
+
+![수소에너지](https://newsroom.posco.com/kr/wp-content/uploads/2022/06/posco_%EC%9E%A5%ED%91%9C05.jpg)
