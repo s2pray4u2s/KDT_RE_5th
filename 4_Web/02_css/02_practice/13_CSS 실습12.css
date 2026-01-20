@@ -1,0 +1,54 @@
+/* ===== reset ===== */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== stage ===== */
+.stage {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    border: 1px solid black;
+
+  /* 🔹 공 관련 공통 변수 */
+    --ball-size: 80px;
+    --duration: 5s;
+}
+
+/* ===== ball ===== */
+.ball {
+    width: var(--ball-size);
+    height: var(--ball-size);
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: radial-gradient(circle at 30% 30%, #ffd66b, #ff8c00 70%, #9c2f00);
+    animation: roam var(--duration) linear infinite;
+}
+
+/* ===== animation ===== */
+@keyframes roam {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    25% {
+        transform:
+            translate(calc(100vw - var(--ball-size)), 0) rotate(360deg);
+    }
+
+    50% {
+        transform:
+            translate(calc(100vw - var(--ball-size)), calc(100vh - var(--ball-size)))   rotate(720deg);
+    }
+
+    75% {
+        transform:
+            translate(0, calc(100vh - var(--ball-size))) rotate(1080deg);}
+
+    100% {
+        transform: 
+            translate(0, 0) rotate(1440deg);}
+}

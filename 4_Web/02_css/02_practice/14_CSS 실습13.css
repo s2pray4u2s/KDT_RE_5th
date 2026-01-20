@@ -1,0 +1,91 @@
+body {
+    background-color: black;
+    color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Pretendard', sans-serif;
+    overflow-x: hidden; /* 대각선 이동 시 가로 스크롤 방지 */
+}
+
+.text-container {
+    width: 90%;
+    max-width: 600px;
+}
+
+.line {
+    opacity: 0;
+    margin-bottom: 10px;
+    /* 대각선 애니메이션 적용 */
+    animation: 
+        diagonal-in 0.8s ease-out forwards,
+        diagonal-out 0.8s ease-in forwards;
+}
+
+/* 문구 안의 강조 단어 */
+.line span {
+    display: inline-block;
+    color: #7A1F2B;
+    font-weight: bold;
+    animation: pulse 1.5s infinite;
+}
+
+/* 순차적 등장 (지연 시간 설정) */
+.line:nth-of-type(1) { animation-delay: 0.4s, 5.4s; }
+.line:nth-of-type(2) { animation-delay: 0.8s, 5.8s; }
+.line:nth-of-type(3) { animation-delay: 1.2s, 6.2s; }
+.line:nth-of-type(4) { animation-delay: 1.6s, 6.6s; }
+.line:nth-of-type(5) { animation-delay: 2.0s, 7.0s; }
+.line:nth-of-type(6) { animation-delay: 2.4s, 7.4s; }
+.line:nth-of-type(7) { animation-delay: 2.8s, 7.8s; }
+.line:nth-of-type(8) { animation-delay: 3.2s, 8.2s; }
+.line:nth-of-type(9) { animation-delay: 3.6s, 8.6s; }
+.line:nth-of-type(10) { animation-delay: 4.0s, 9.0s; }
+.line:nth-of-type(11) { animation-delay: 4.4s, 9.4s; }
+.line:nth-of-type(12) { animation-delay: 4.8s, 9.8s; }
+.line:nth-of-type(13) { animation-delay: 5.2s, 10.2s; }
+.line:nth-of-type(14) { animation-delay: 5.6s, 10.6s; }
+.line:nth-of-type(15) { animation-delay: 6.0s, 11.0s; }
+.line:nth-of-type(16) { animation-delay: 6.4s, 11.4s; }
+.line:nth-of-type(17) { animation-delay: 6.8s, 11.8s; }
+.line:nth-of-type(18) { animation-delay: 7.2s, 12.2s; }
+.line:nth-of-type(19) { animation-delay: 7.6s, 12.6s; }
+.line:nth-of-type(20) { animation-delay: 8.0s, 13.0s; }
+.line:nth-of-type(21) { animation-delay: 8.4s, 13.4s; }
+.line:nth-of-type(22) { animation-delay: 8.8s, 13.8s; }
+.line:nth-of-type(23) { animation-delay: 9.2s, 14.2s; }
+.line:nth-of-type(24) { animation-delay: 9.6s, 14.6s; }
+.line:nth-of-type(25) { animation-delay: 10.0s, 15.0s; }
+.line:nth-of-type(26) { animation-delay: 10.4s, 15.4s; }
+.line:nth-of-type(27) { animation-delay: 10.8s, 15.8s; }
+
+/* 대각선 애니메이션 키프레임 */
+@keyframes diagonal-in {
+    from {
+        opacity: 0;
+        /* 오른쪽(50px) 위(-50px)에서 출발 */
+        transform: translate(50px, -50px); 
+    }
+    to {
+        opacity: 1;
+        /* 원래 위치(0, 0)로 도착 */
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes diagonal-out {
+    from {
+        opacity: 1;
+        transform: translate(0, 0x); 
+    }
+    to {
+        opacity: 0;
+        transform: translate(-50px, 50px);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); opacity: 0.8; }
+}

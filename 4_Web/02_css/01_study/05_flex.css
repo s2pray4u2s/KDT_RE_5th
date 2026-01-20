@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    /* 주축 방향 */
+    /* flex-direction: row; */
+    /* 주축 기준 정렬 */
+    /* justify-content: flex-start; */
+    /* 교차축 기준 정렬 */
+    /* align-items: center; */
+    flex-wrap: wrap;
+}
+
+.item {
+    border: 1px solid black;
+    width: 200px;
+    height: 500px;
+    background-color: yellowgreen;
+}

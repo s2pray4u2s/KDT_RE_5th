@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- head: 문서 정보 -->
+    <!--meta: 페이지 설명, 화면 크기 등 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 문서 제목 -->
+    <title>Document</title>
+    <!-- Style 정보 -->
+    <style></style>
+    <!-- link: 외부 리소스와의 연결 정의 -->
+    <link rel="stylesheet" href="">
+    <!-- script: javascript 정의 -->
+    <script></script>
+</head>
+<body>
+    <!-- 제목 태그 -->
+    <h1>안녕하세요</h1>
+    <h2>안녕하세요</h2>
+    <h3>안녕하세요</h3>
+    <h4>안녕하세요</h4>
+    <h5>안녕하세요</h5>
+    <h6>안녕하세요</h6>
+    <!-- 본문 태그 -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident atque sed, nemo dolorem magni explicabo dicta fugit officiis ab, obcaecati veniam deleniti ducimus illo deserunt? Voluptas, odit. Quasi, et vitae!</p>
+    <!-- 줄바꿈 -->
+    <span>인라인</span>
+    <br />
+    <span>인라인</span>
+
+    <!-- 수평 줄 -->
+    <hr>
+
+    <!-- 순서 없는 목록, type 마커 모양: circle, square, none... -->
+    <ul type="square">
+        <li>사과</li>
+        <li>바나나</li>
+        <li>포도</li>
+    </ul>
+
+    <!-- 순서 있는 목록 -->
+    <!-- type: 1, A, a,... -->
+    <ol type="i" start="3" reversed>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ol>
+    <a href="/">인라인 요소</a>
+
+    <span><b>두껍게</b></span>
+    <span><strong>strong</strong></span>
+    <br />
+
+    <!-- img 태그 -->
+    <img src="https://pbs.twimg.com/media/G4CPA4FXEAATPZq.jpg" alt="" width="1000">
+    <br />
+
+    <!-- 상대 경로 -->
+    <img src="./모니에.webp" alt="" width="1000">
+    <br />
+
+    <!-- 절대 경로(PC) -->
+    <img src="C:\Users\user\Desktop\wdh\4_Web\01_HTML\모니에.webp" alt="" width="500">
+    <br />
+
+    <!-- 절대 경로(라이브 서버) -->
+    <img src="/4_Web/01_HTML/모니에.webp" alt="" width="500">
+    <br />
+
+    <!-- a 태그: 링크 연결 -->
+    <a href="/">인라인 요소</a>
+    <br>
+    <a href="http://www.google.com" target="_blank">구글</a>
+
+    <hr>
+
+    <!-- form, input 태그 -->
+    <form>
+        <input type="button" value="버튼">
+        <input type="text">
+        <input type="password" name="" id="">
+        <input type="checkbox" name="fruits" value="apple" checked> 사과
+        <input type="checkbox" name="fruits" value="banana"> 바나나
+        <br>
+        <input type="radio" name="gender" value="man"> 남자
+        <input type="radio" name="gender" value="woman"> 여자
+        <br>
+        <input type="date" name="" id="">
+        <input type="datetime-local" name="" id="">
+        <br>
+        <select name="" id="">
+            <optgroup label="COFFEE">
+                <option value="americano" selected>아메리카노</option>
+                <option value="latte">카페라떼</option>
+                <option value="espresso">에스프레소</option>
+            </optgroup>
+            <optgroup label="JUICE">
+                <option value="orange">오렌지 주스</option>
+                <option value="kiwi">키위 주스</option>
+                <option value="strawberry">딸기 주스</option>
+            </optgroup>
+        </select>
+    </form>
+    <br>
+
+    <hr>
+
+    <!-- table 태그 -->
+    <table border="1" cellspacing="0" cellpadding="5" width="300">
+        <tr>
+            <th>이름</th>
+            <th>나이</th>
+            <th>전화번호</th>
+        </tr>
+        <tr>
+            <td>WDH</td>
+            <td>38</td>
+            <td>010-1111-1111</td>
+        </tr>
+        <tr>
+            <td>장원영</td>
+            <td>24</td>
+            <td>010-1234-5678</td>
+        </tr>
+    </table>
+</body>
+</html>

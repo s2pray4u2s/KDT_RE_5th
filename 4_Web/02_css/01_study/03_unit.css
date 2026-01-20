@@ -1,0 +1,47 @@
+html {
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.px-box {
+    width: 200px;
+    background-color: bisque;
+}
+
+.percent-wrapper {
+    width: 50%;
+}
+
+.percent-box {
+    width: 100%;
+    background-color: blanchedalmond;
+}
+
+.em-box {
+    font-size: 2em;
+    width: 10em;
+    background-color: antiquewhite;
+}
+
+.rem-box {
+    font-size: 2rem;
+    width: 10rem;
+    background-color: yellowgreen;
+}
+
+.viewport-box {
+    width: 70vw;
+    background-color: aquamarine;
+}
+
+.box {
+    border: 2px black;
+    border-top: 3px inset navajowhite;
+    border-bottom: 1px dotted rebeccapurple;
+    border-width: 1px 2px 3px 4px;
+    padding: 20px 10px;
+    margin: 10px;
+}

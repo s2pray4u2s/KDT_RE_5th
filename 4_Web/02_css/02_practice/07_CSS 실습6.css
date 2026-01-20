@@ -1,0 +1,21 @@
+html {
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    padding: 14px 16px;
+    margin: 10px 0;
+    background:
+    linear-gradient(90deg, #22c55e, #60a5fa, #f59e0b) bottom / 100% 4px no-repeat,
+    #fff;
+
+    border-top: 3px dashed #2563eb;
+    border-right: dotted yellowgreen;
+    border-left: 6px solid #f59e0b;
+
+    border-radius: 12px;
+}
