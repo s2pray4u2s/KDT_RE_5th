@@ -1,0 +1,27 @@
+#define GAS_AO A0
+#define GAS_DO 8
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(GAS_AO, INPUT);
+  pinMode(GAS_DO, INPUT);
+  Serial.println("히터 가열 시작");
+  delay(1000);
+  Serial.println("히트 가열 종료 동작 시작");
+}
+
+void loop() {
+  float sensorValue = analogRead(GAS_AO);
+  int sensorDValue = digitalRead(GAS_DO);
+
+  Serial.print("아날로그 센서 입력: ");
+  Serial.println(sensorValue);
+
+  Serial.print("디지털 센서 입력: ");
+  Serial.println(sensorDValue);
+  delay(1000);
+
+  if (sensorValue > 450) {
+    Serial.print("!! 연기 감지 !!");
+  }
+}
