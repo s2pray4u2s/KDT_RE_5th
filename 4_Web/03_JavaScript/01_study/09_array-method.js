@@ -119,19 +119,19 @@ console.log(" ");
 console.log(nums); // [400, 7, 6, 4, 2, 1]
 console.log(" ");
 
-// map: 배열을 순회하면서 매개변수로 전달받는 콜백함수를 적용 (원본 변경 x)
+// 1. map: 배열을 순회하면서 매개변수로 전달받는 콜백함수를 적용 (원본 변경 x)
 console.log("===== map() =====");
 nums = nums.map((x) => x * 2); // 각 요소를 한 번씩 선택해서 매개변수(x)로 전달 하고, 전달 받은 x에 2를 곱해서 배열로 반환
 console.log(nums); // [800, 14, 12, 8, 4, 2]
 console.log(" ");
 
-// filter: 콜백 함수를 기준으로 요소를 필터링에서 반환 (원본 변경 x)
+// 2. filter: 콜백 함수를 기준으로 요소를 필터링에서 반환 (원본 변경 x)
 console.log("===== filter() =====");
 let filtered = nums.filter((x) => x > 5);
 console.log(filtered);
 console.log(" ");
 
-// reduce: 앞 요소에 대해 뒤 요소를 연산한 결과를 누적
+// 3. reduce: 앞 요소에 대해 뒤 요소를 연산한 결과를 누적
 // 두 번째 매개변수로 받은 0에 배열을 순회하면서  앞 요소에 뒷 요소를 더한 값을 반환
 console.log("===== reduce() =====");
 let sum = nums.reduce((acc, cur) => acc + cur, 0);
@@ -143,6 +143,29 @@ for (let i = 0; i < nums.length; i++) {
 }
 console.log(sum2); // 840
 
+console.log(" ");
 
+// 4. 반복문
+let fruits = ["Watermelon", "참외", "귤", "Orange", "Strawberry"];
 
+// 4-1. for문
+console.log("===== for문 =====");
+for (let i = 0; i < fruits.length; i++) {
+    console.log(`for문 활용 배열의 ${i}번째 요소 출력: ${fruits[i]}`);
+}
 
+console.log(" ");
+
+// 4-2. for of 문
+console.log("===== for of문 =====");
+for (let fruit of fruits) {
+    // fruits라는 배열로 부터(of) 해당 배열의 요소들을 fruit 라고 부르면서 배열 순회
+    console.log(`for of문 활용 배열의 fruit 요소 출력: ${fruit}`);
+}
+
+console.log(" ");
+
+// 5. 배열 메서드 forEach
+console.log("===== forEach =====");
+fruits.forEach((fruit, index) => 
+    console.log(`forEach 활용 배열의 ${index}번째 요소 출력: ${fruit}`));
